@@ -63,10 +63,11 @@ body {
 }
 .header {
   margin: 0em 0 0 0;
-  background: rgba(0, 0, 0, 0.54);
+  background: white;
   padding: 1em 0;
   position: relative;
 }
+
 /*-- nav --*/
 .navbar-default {
   background: none;
@@ -76,15 +77,25 @@ body {
   margin-bottom: 0;
   padding: 0em 0 0;
 }
+
+.navbar-header {
+  width: 30%;
+}
+
+.navbar-brand {
+  width: 100%;
+}
+
 .navbar-brand-1 {
-  width: 250px;
-  margin-top: -7px;
+  display: block;
+  background: url("../images/svg/color-logo.svg");
+  background-size: cover;
+  width: 120px;
+  height: 50px;
+  margin-top: -1em;
   padding: 0;
 }
-.navbar-brand span {
-  color: #fb5710;
-  display: inline-block;
-}
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -102,7 +113,7 @@ body {
   font-weight: bold;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #444;
 }
 .navbar-collapse {
   padding: 0;
@@ -397,8 +408,8 @@ body {
 .cl-effect-13 ul li a:hover::before,
 .cl-effect-13 ul li a:focus::before,
 ul.nav.navbar-nav li.active a::before {
-  color: #fff;
-  text-shadow: 10px 0 #fff, -10px 0 #fff;
+  color: #222;
+  text-shadow: 10px 0 #444, -10px 0 #444;
 }
 /*-- //nav --*/
 /*-- top-nav --*/
@@ -2290,6 +2301,12 @@ ul.agileinfo_social_icons {
   }
 }
 @media (max-width: 768px) {
+  .navbar-default .navbar-toggle {
+    background-color: #fb5710;
+  }
+  .navbar-header {
+    width: 100%;
+  }
   .agileinfo-dot-1 {
     min-height: 300px;
   }
@@ -2371,7 +2388,7 @@ ul.agileinfo_social_icons {
     border: none;
   }
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: white;
   }
   .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus {
