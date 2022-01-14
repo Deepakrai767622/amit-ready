@@ -82,14 +82,11 @@ body {
   width: 30%;
 }
 
-.navbar-brand {
-  width: 100%;
-}
-
 .navbar-brand-1 {
   display: block;
   background: url("../images/svg/color-logo.svg");
   background-size: cover;
+  background-repeat: no-repeat;
   width: 120px;
   height: 50px;
   margin-top: -1em;
@@ -2301,6 +2298,50 @@ ul.agileinfo_social_icons {
   }
 }
 @media (max-width: 768px) {
+  .navbar-brand-1 {
+    background: url("../images/svg/m-color-logo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 45px;
+  }
+
+  .navbar-toggle {
+    margin: 0 0 0.5em 0;
+  }
+
+  .navbar-nav > li {
+    border-right: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar-collapse {
+    background: #000000;
+    z-index: 9;
+  }
+  .navbar-nav {
+    margin: 0;
+    float: none;
+  }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border: none;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background: #fb5710;
+  }
+  .banner-address-left {
+    padding-left: 0;
+  }
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:active {
+    color: #fb5710 !important;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
   .navbar-default .navbar-toggle {
     background-color: #fb5710;
   }
@@ -2366,42 +2407,6 @@ ul.agileinfo_social_icons {
   }
 }
 @media (max-width: 736px) {
-  .navbar-toggle {
-    margin: 0 0 0.5em 0;
-  }
-
-  .navbar-nav > li {
-    border-right: none;
-    display: block;
-    text-align: center;
-  }
-  .navbar-collapse {
-    background: #000000;
-    z-index: 9;
-  }
-  .navbar-nav {
-    margin: 0;
-    float: none;
-  }
-  .navbar-default .navbar-collapse,
-  .navbar-default .navbar-form {
-    border: none;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
-  }
-  .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus {
-    background: #fb5710;
-  }
-  .banner-address-left {
-    padding-left: 0;
-  }
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus,
-  .dropdown-menu > li > a:active {
-    color: #fb5710 !important;
-  }
   .banner-address-left {
     width: 50%;
     margin-bottom: 10px;
